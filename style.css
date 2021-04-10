@@ -1177,6 +1177,13 @@ input{
     }
     
 }
+@media only screen and (max-width:415px)  {
+
+    .about{
+        margin-top: 56vh;
+    }
+    
+}
 @media only screen and (max-width:380px) {
     .about{
         margin-top:65vh;
