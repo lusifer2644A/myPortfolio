@@ -9,34 +9,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@300&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/jpg" href="fav.png"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" type="image/jpg" href="./icons/fav.png" />
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    
+
 </head>
 
+<div id="navbar">
+    
+    <div class="logo">
+        <a style="cursor:pointer;margin:0; padding:0;background:none; "
+            href="https://lusifer2644a.github.io/myPortfolio/" onclick="_blank"><img src="./images/ak.png"
+                alt="ANKIT"></a>
+    </div>
+    <div class="hamburger">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+    </div>
+    <ul >
+        
+        <li class="list"><a href="#home">Home</a></li>
+        <li class="list"><a href="#about">About</a></li>
+        <li class="list"><a href="#skills">Skills</a></li>
+        <li class="list"><a href="#educa">More</a></li>
+        <li class="list"><a  href="#contact">Contact</a></li>
+    </ul>
+</div>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a style="cursor:pointer;margin:0; padding:0;background:none; " href="https://lusifer2644a.github.io/myPortfolio.github.io/"><img src="ak.png" alt="ANKIT"></a>
-        </div>
-        <ul>
-            <!-- wip-Work In Progress -->
-            <li class="list"><a class="wip" href="#">Home</a></li>
-            <li class="list"><a class="wip" href="#">About</a></li>
-            <li class="list"><a class="wip" href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- home section -->
+    <div class="main-img" id="home">
+        <img src="./images/bg.jpg" alt="">
+    </div>
     <div class="mainarea">
-        <div class="content">
-            <div class="text">
-                Hello, It's Me
+        <div class="content" data-aos="fade-up">
+            <div class="text1">
+                Hello, I am
             </div>
             <div class="name">Ankit Kumar</div>
             <div class="job">
                 <span>And I'm a</span>
-                <div class="typing-text">
+                <div  class="typing-text">
                     <li><span>Student</span></li>
                     <li><span>Coder</span></li>
                     <li><span>WebDev</span></li>
@@ -44,10 +62,179 @@
                 </div>
             </div>
         </div>
+
     </div>
+    <!-- colorchange -->
+    <!-- <div id="colorchanger1"></div> -->
+
+    <!-- About Section -->
+    <div class="about" id="about">
+        <div class="about-img">
+            <!-- <img src="./images/Heritage-Building.jpg" alt="Heritage-Building"> -->
+            <img src="./images/about me.png" alt="aboutme">
+        </div>
+        <div class="about-content" >
+            <div class="text2 about-heading" data-aos="fade-up" data-aos-delay="50">About Me</div>
+            <div class="text3 skill-activate" data-aos="fade-up" data-aos-delay="200">
+                <!-- <span class="icon"><img src="./icons/about.png" alt="about"></span>  -->
+                I am <span style="color: #dadada; font-weight: 400;">ECE Sophomore</span> at <span
+                    style="color: #dadada; font-weight: 400;">IIT(ISM),Dhanbad</span>.
+                <br><br>
+                My hometown is Gumla, a small city in Jharkhand.
+                <br><br>
+                I am tech-enthusiast and have a keen interest in Web Development and UI Design.
+                <br>I am also a Competative Coder and do coding mainly in C++.
+                <br>Cinematography and Post Editing is the place where my hobby resides.
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- colorchange
+    <div id="colorchanger2"></div>
+     -->
+
+    <!-- skills section -->
+    <div class="skill-know" id="skills">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="images/skill.png" alt="skills.jpg">
+            </div>
+            <div class="skill-box">
+                <div class="text2">My Skills</div>
+                <li>
+                    <h3 class="skill-h3">Programming</h3>
+                    <span class="bar"><span class="prog scroll-anim-span"></span></span><span
+                        class="skill-percent">70%</span>
+                </li>
+                <li>
+                    <h3 class="skill-h3">UI/UX Design</h3>
+                    <span class="bar"><span class="uiux scroll-anim-span"></span></span><span
+                        class="skill-percent">50%</span>
+                </li>
+                <li>
+                    <h3 class="skill-h3">Cinematography</h3>
+                    <span class="bar"><span class="cinemato scroll-anim-span"></span></span><span
+                        class="skill-percent">70%</span>
+                </li>
+
+            </div>
+        </div>
+        <!-- Knowledge Section -->
+        <div class="know-sec">
+            <div data-aos="fade-up" data-aos-delay="50" class="know-box">
+                <div class="know-icon">
+                    <i class="fa fa-code"></i>
+                    <div class="know-head">Programming</div>
+                </div>
+                <div class="know-text">
+                    C++, JavaScript, Nodejs
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="150" class="know-box">
+                <div class="know-icon">
+                    <i class="fa fa-desktop"></i>
+                    <div class="know-head">UI Design</div>
+                </div>
+                <div class="know-text">
+                    React, HTML5, CSS3
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="250" class="know-box">
+                <div class="know-icon">
+                    <i class="fa fa-film"></i>
+                    <div class="know-head">Editing</div>
+                </div>
+                <div class="know-text">
+                    Adobe Premier Pro, Photoshop, Illustrator
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Education Section -->
+    <div class="edu-sec" id="educa">
+        <div class="edu-img">
+            <img src="./images/Heritage-Building.jpg" alt="Heritage-Building">
+        </div>
+
+        <div class="edu-content">
+            <div data-aos="fade-up" data-aos-delay="50" class="text2">Education</div>
+            <div class="edu-content-flw">
+                <div class="edu-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edu-icon"><i class="fa fa-university"></i></div>
+                    <div class="edu-text">
+                        <div class="edu-instit">Indian Institute Of Technology (ISM), Dhanbad</div>
+                        <div class="edu-deg">Bachelor of Technology in<br>Electronics and Communication Engineering</div>
+                        <div class="edu-year">2019-23</div>
+                    </div>
+                </div>
+                <div class="edu-box" data-aos="fade-up" data-aos-delay="350">
+                    <div class="edu-icon"><i class="fa fa-university"></i></div>
+                    <div class="edu-text">
+                        <div class="edu-instit">Delhi Public School, Ranchi</div>
+                        <div class="edu-deg">AISSCE</div>
+                        <div class="edu-year">2016-18</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Position of Responsibility Section -->
+    <div class="por-sec">
+        <div class="por-content">
+            <div data-aos="fade-up" data-aos-delay="50" class="text2">Position of Responsibility</div>
+            <div data-aos="fade-up" data-aos-delay="200" class="por-box">
+                <div class="por-icon"><i class="fa fa-briefcase"></i></div>
+                <div class="por-text">
+                    <div class="por-title">Event Organiser</div>
+                    <span class="por-name">Srijan</span>
+                    <span class="por-desc">Cultural Fest of IIT(ISM),DHANBAD</span>
+                </div>
+            </div>
+        </div>
+        <div class="por-img">
+            <img src="./images/por.png" alt="PositionofResponsibility">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+        <div class="quote">
+            <img src="./images/contact.png" alt="contact">
+        </div>
+        <div class="contact-bar"></div>
+        <div class="contact">
+            <div class="contact-form">
+               <div data-aos="fade-up" data-aos-delay="50" class="contact-desc">Tell me, How can I help You?</div>
+               <div data-aos="fade-up" data-aos-delay="150" class="contact-head">Say Hello!</div>
+               <div class="form-area">
+                   <form  class="form-submit-js" onsubmit="return false">
+                       <input data-aos="fade-up" data-aos-delay="250" class="form" name="name" type="text" placeholder="Name" ><br>
+                       <input data-aos="fade-up" data-aos-delay="350" class="form" name="email" type="email" placeholder="Email" ><br>
+                       <textarea data-aos="fade-up" data-aos-delay="450" class="form" name="message" type="text" placeholder="Message" rows="4"></textarea><br>
+                       <input data-aos="fade-up" data-aos-delay="250" type="submit" class="contact-submit-button" value="Submit"/>
+                   </form>
+               </div>
+
+            </div>
+            <div class="addresses">
+
+            </div>
+           
+        </div>
+    </div>
+
+
+
+    <!-- followon section -->
     <div class="followon">
         <div class="socialmedia">
-            <h4>Social</h4>
+            <!-- <h4>Social</h4> -->
             <ul>
 
                 <li><a href="https://www.facebook.com/profile.php?id=100007433058727"
@@ -60,31 +247,71 @@
                         onkeypress="window.open(this.href); return false;"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="https://twitter.com/AnkitKu15373531" onclick="window.open(this.href); return false;"
                         onkeypress="window.open(this.href); return false;"><i class="fa fa-twitter"></i></a></li>
-            </ul>
-        </div>
-        <div class="coding_sites">
-            <h4>Coding</h4>
-            <ul>
-                <li><a href="https://codeforces.com/profile/Lusifer02" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this.href); return false;"><span  style="color: #ecfa27;" class="iconify"
-                            data-icon="simple-icons:codeforces" data-inline="false"></span></i></a></li>
-                <li #hackerrank><a href="https://www.hackerrank.com/LUSIFER02"
-                        onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this.href); return false;"><span style="color: #2EC866;" class="iconify"
-                            data-icon="cib:hackerrank" data-inline="false"></span></a></li>
                 <li><a href="https://github.com/lusifer2644A" onclick="window.open(this.href); return false;"
                         onkeypress="window.open(this.href); return false;"><i class="fa fa-github"></i></a></li>
             </ul>
         </div>
+        
     </div>
 
     <footer class="foot">
         <div class="copyright_text">
-            © 2021 Ankit Kumar Gupta. All rights reserved.
+            Ankit Kumar Gupta | its_lusifer_ | 2021
         </div>
     </footer>
 
+     <!-- SMTP CDNS -->
+     <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <!-- AOS LINKS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 200,
+                duration: 1000,
+                delay: 300,
+                once: true
+            }
+
+        );
+        
+
+
+        // Contact 
+        const inputs=document.querySelector(".form-submit-js");
+
+        var but=document.getElementsByClassName("contact-submit-button");
+        but[0].addEventListener('click',(name,email,message)=>{
+            Email.send({
+                
+                SecureToken:"9d1a6419-4bdf-4822-aed8-c627370265b8",
+                From:"8083ankit@gmail.com",
+                To:"ankit121rock@gmail.com",
+                Subject:"Ankit, "+inputs.elements["name"].value+" sent a message!",
+                Body:"Name:"+inputs.elements["name"].value+"<br>Email: "+inputs.elements["email"].value+"<br>Message: "+inputs.elements["message"].value
+            }).then(msg=>{
+                if(msg=='OK'){
+                    alert("Thanks "+inputs.elements["name"].value+"!\nMessage Sent Sucessfully");
+                }
+                else
+                console.log("error");
+            });
+        });
+       
+    </script>
+    <!-- CDN LINKS -->
+
+   
+	
+    <!-- Animation CDNS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
+    
+
 </body>
 
 </html>
