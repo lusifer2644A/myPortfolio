@@ -1170,3 +1170,15 @@ input{
 
 
 }
+@media only screen and (max-width:420px)  {
+
+    .about{
+        margin-top: 63vh;
+    }
+    
+}
+@media only screen and (max-width:380px) {
+    .about{
+        margin-top:65vh;
+    }
+}
