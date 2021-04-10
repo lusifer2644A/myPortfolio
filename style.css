@@ -1122,7 +1122,7 @@ input{
 }
 
 .lines{
-    height: 5px;
+    height: 3px;
     width: 30px;
     background-color: white;
     margin: 5px;
@@ -1142,6 +1142,11 @@ input{
     width: 20%;
     text-align: center;
     opacity: 1;
+    
+}
+#navbar ul li a{
+    font-size: 24px;
+    font-weight: 300;
     
 }
 
