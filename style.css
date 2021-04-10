@@ -1182,3 +1182,8 @@ input{
         margin-top:65vh;
     }
 }
+@media only screen and (max-width:376px) {
+    .about{
+        margin-top:53vh;
+    }
+}
