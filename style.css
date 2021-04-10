@@ -694,7 +694,9 @@ input{
 /* -------Media Queries---------- */
 
 @media only screen and (max-width: 600px) {
-    
+    body{
+        overflow-x:hidden;
+    }
     .main-img{
         top:100px;
         
