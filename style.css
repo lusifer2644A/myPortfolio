@@ -1110,7 +1110,7 @@ input{
     height: 60vh;
     width: 100%;
     flex-direction: column;
-    background-color: #000000cc;
+    background-color: #000000e5;
     clip-path: circle(40px at 90% -10%);
     -webkit-clip-path: circle(10px at 100% -10%);
     transition:all 1s ease-out;
