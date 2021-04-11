@@ -1119,8 +1119,8 @@ input{
 }
 
 #navbar ul.open{
-    clip-path: circle(700px at 1000% -10%);
-    -webkit-clip-path: circle(700px at 100% -10%);
+    clip-path: circle(900px at 1000% -10%);
+    -webkit-clip-path: circle(900px at 100% -10%);
 }
 
 .lines{
