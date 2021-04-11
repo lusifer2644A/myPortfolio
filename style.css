@@ -1119,8 +1119,8 @@ input{
 }
 
 #navbar ul.open{
-    clip-path: circle(500px at 1000% -10%);
-    -webkit-clip-path: circle(500px at 100% -10%);
+    clip-path: circle(700px at 1000% -10%);
+    -webkit-clip-path: circle(700px at 100% -10%);
 }
 
 .lines{
@@ -1128,7 +1128,7 @@ input{
     width: 30px;
     background-color: white;
     margin: 5px;
-    transition: all 0.35s ease-out;
+    transition: all 0.4s ease-out;
 }
 .lines-change:nth-child(1){
     transform: rotate(45deg) translate(0,11px);
