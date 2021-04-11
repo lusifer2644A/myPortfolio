@@ -61,13 +61,19 @@ function updatePercentage() {
 //  Nav Bar
 
 const hamburger=document.querySelector(".hamburger");
+const lines=document.querySelectorAll(".lines");
 const nav_ul=document.querySelector("#navbar ul");
 const links=document.querySelector("#navbar ul li");
 
 hamburger.addEventListener('click',(e)=>{
     nav_ul.classList.toggle('open');
+    
+    for(i=0;i<3;i++){
+        console.log(lines[i]);
+        lines[i].classList.toggle('lines-change');
+    }
 })
 
-links.forEach(link => {
-    link.classList.toggle('fade');
-});
+links.addEventListener('click',e=>{
+    nav_ul.classList.toggle('open');
+})
