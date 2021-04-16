@@ -57,16 +57,15 @@ html{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color:#fff;
+    background-color: white;
     z-index: 99;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-flow: row nowrap;
+    justify-content: center;
 }
-.loader>img{
+.loader>balls{
     width: 70px;
     animation: fadeImgOut 1s ;
     animation-fill-mode: forwards;
@@ -89,8 +88,8 @@ html{
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  top: 60px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
 }
 .preloader div:nth-child(1) {
   background: #042554;
@@ -108,11 +107,11 @@ html{
   animation-delay: -0.5747126436781609s;
 }
 .balls {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 40px;
   display: inline-block;
   overflow: hidden;
-  background: none;
+  transform: translate(-100%,-50%);
 }
 .preloader {
   width: 100%;
@@ -835,6 +834,9 @@ input{
         overflow-x: hidden;
     }
 
+    .balls {
+        transform: translate(-30%,-50%);
+      }
 
     .main-img{
         top:100px;
