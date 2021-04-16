@@ -29,6 +29,13 @@ body{
     font-weight: 300;
 
 }
+
+.stop-scroll-onload{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
 html{
     overflow-x: hidden;
     width: 100vw;
@@ -43,6 +50,49 @@ html{
 .main-img img{
     object-fit: fill;
     width:100vw;    
+}
+
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.loader>img{
+    width: 70px;
+    animation: fadeImgOut 1s ;
+    animation-fill-mode: forwards;
+}
+
+.hidden{
+    animation: fadeOut 1s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeImgOut {
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    
 }
 
 
@@ -1139,14 +1189,13 @@ input{
     }
 
     #navbar ul{
-        
         position: fixed;
         padding-top: 8%;
         justify-content: space-evenly;
         height: 60vh;
         width: 100%;
         flex-direction: column;
-        background-color: #000000e5;
+        background-color: #000000ea;
         clip-path: circle(40px at 90% -10%);
         -webkit-clip-path: circle(10px at 100% -10%);
         transition:all 1s ease-out;
@@ -1158,7 +1207,7 @@ input{
     }
 
     .lines{
-        height: 3px;
+        height: 2.5px;
         width: 30px;
         background-color: white;
         margin: 5px;
@@ -1196,7 +1245,7 @@ input{
     }
 
     #navbar ul li a{
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 300;
         
     }

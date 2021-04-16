@@ -19,29 +19,36 @@
 
 </head>
 
-<div id="navbar">
-    
-    <div class="logo">
-        <a style="cursor:pointer;margin:0; padding:0;background:none; "
-            href="https://lusifer2644a.github.io/myPortfolio/" onclick="_blank"><img src="./images/ak.png"
-                alt="ANKIT"></a>
-    </div>
-    <div class="hamburger">
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-    </div>
-    <ul >
-        
-        <li class="list"><a href="#home">Home</a></li>
-        <li class="list"><a href="#about">About</a></li>
-        <li class="list"><a href="#skills">Skills</a></li>
-        <li class="list"><a href="#educa">More</a></li>
-        <li class="list"><a  href="#contact">Contact</a></li>
-    </ul>
-</div>
 
-<body>
+<body class="stop-scroll-onload" scroll="no">
+
+    <!-- loader -->
+    <div class="loader">
+        <img src="./images/loader.gif" alt="">
+    </div>
+
+    <!-- nav section -->
+    <div id="navbar">
+        
+        <div class="logo">
+            <a style="cursor:pointer;margin:0; padding:0;background:none; "
+                href="https://lusifer2644a.github.io/myPortfolio/" onclick="_blank"><img src="./images/ak.png"
+                    alt="ANKIT"></a>
+        </div>
+        <div class="hamburger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <ul >
+            
+            <li class="list"><a href="#home">Home</a></li>
+            <li class="list"><a href="#about">About</a></li>
+            <li class="list"><a href="#skills">Skills</a></li>
+            <li class="list"><a href="#educa">More</a></li>
+            <li class="list"><a  href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <!-- home section -->
     <div style="position: relative;">
         <div class="main-img" id="home">
@@ -68,19 +75,14 @@
     
         </div>
     </div>
-    <!-- colorchange -->
-    <!-- <div id="colorchanger1"></div> -->
-
     <!-- About Section -->
     <div class="about" id="about">
         <div class="about-img">
-            <!-- <img src="./images/Heritage-Building.jpg" alt="Heritage-Building"> -->
             <img src="./images/about me.png" alt="aboutme">
         </div>
         <div class="about-content" >
             <div class="text2 about-heading" data-aos="fade-up" data-aos-delay="50">About Me</div>
             <div class="text3 skill-activate" data-aos="fade-up" data-aos-delay="200">
-                <!-- <span class="icon"><img src="./icons/about.png" alt="about"></span>  -->
                 I am <span style="color: #dadada; font-weight: 400;">ECE Sophomore</span> at <span
                     style="color: #dadada; font-weight: 400;">IIT(ISM),Dhanbad</span>.
                 <br><br>
@@ -95,10 +97,7 @@
 
     </div>
 
-    <!-- colorchange
-    <div id="colorchanger2"></div>
-     -->
-
+  
     <!-- skills section -->
     <div class="skill-know" id="skills">
         <div class="skill">
@@ -277,6 +276,15 @@
     <!-- AOS LINKS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+
+        const loader=document.querySelector('.loader');
+        window.addEventListener('load',e=>{
+            loader.classList.add('hidden');
+            const body=document.querySelector('body');
+            body.classList.remove('stop-scroll-onload');
+        });
+
+
         AOS.init(
             {
                 offset: 200,
