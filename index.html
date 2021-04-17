@@ -323,7 +323,10 @@
                     alert("Thanks "+inputs.elements["name"].value+"!\nMessage Sent Sucessfully");
                 }
                 else
-                console.log("error");
+                alert("404\nSomething went wrong!");
+                inputs.elements["name"].value='';
+                inputs.elements["email"].value='';
+                inputs.elements["message"].value='';
             });
         });
        
