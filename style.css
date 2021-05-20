@@ -839,12 +839,12 @@ input{
       }
 
     .main-img{
-        top:100px;
+        top:152px;
         
     }
     .main-img img{
         zoom:200%;
-        object-position: -170px 40px;
+        object-position: -170px 9px;
     }
     .logo img{
         height:50px ;
